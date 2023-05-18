@@ -21,7 +21,6 @@ public class Board : MonoBehaviour{
     [SerializeField] private GameObject _playAreaTilePrefab;
     [SerializeField] private GameObject _borderTilePrefab;
     [SerializeField] private GameObject _appleTilePrefab;
-    [SerializeField] private bool _isInfinite = false;
 #endregion
 
 
