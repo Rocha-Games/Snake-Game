@@ -167,7 +167,7 @@ public class GameManager : MonoBehaviour
         //Ortho size is HALF of the amount of Unity units displayed vertically
         //So if Ortho is 5, we can see 10 tiles, from -5 to +5
         Camera.main.orthographicSize = Mathf.Clamp(Board.Height * 0.6f, 0, _maxCameraOrthoSize);
-        Camera.main.transform.position = new Vector3(Board.TileSize.x * Board.Width / 2, Board.TileSize.y * Board.Height / 2, Camera.main.transform.position.z );
+        Camera.main.transform.position = new Vector3(Board.TileSize.x * (Board.Width - 1) / 2f, Board.TileSize.y * (Board.Height - 1) / 2f, Camera.main.transform.position.z );
     }
 
     
@@ -327,11 +327,11 @@ public class GameManager : MonoBehaviour
         }
 
         //play all turns
-        Debug.Log($"Total Turns: {_totalTurns}");
+        // Debug.Log($"Total Turns: {_totalTurns}");
         while(turn < _totalTurns){
             yield return new WaitForSeconds(_turnDuration);
 
-            Debug.Log($"Playing turn {turn}");
+            // Debug.Log($"Playing turn {turn}");
             foreach(var player in _dicPlayerMovements){
                 //if player was still alive that turn
                 if(turn < player.Value.Count){

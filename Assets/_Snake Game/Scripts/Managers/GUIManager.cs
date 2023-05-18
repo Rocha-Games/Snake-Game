@@ -17,6 +17,7 @@ public class GUIManager : MonoBehaviour {
     [SerializeField] private GameObject _gameOverContent;
     [SerializeField] private GameObject _countdownContent;
     [SerializeField] private GameObject _playerWonContent;
+    [SerializeField] private GameObject _infoContent;
     [SerializeField] private TextMeshProUGUI _textCountDownValue, _textPlayerWon;
     [SerializeField] private Button _btnPlayAgain, _btnReplay;
 #endregion
@@ -47,6 +48,8 @@ public class GUIManager : MonoBehaviour {
 
         _btnPlayAgain.onClick.AddListener(OnPlayAgainPressed);
         _btnReplay.onClick.AddListener(OnReplayPressed);
+
+        _infoContent.SetActive(false);
     }
 #endregion
 

@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2040cf2108ab6c0428e2efd1640c1dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _columns: 10
-  _rows: 8
+  _columns: 20
+  _rows: 10
   _playAreaTilePrefab: {fileID: 3107985200728325908, guid: 265a27e28e326e14485deed56b807f91, type: 3}
   _borderTilePrefab: {fileID: 3107985200728325908, guid: 371afcf992728de45b4736db2ab9daaa, type: 3}
   _appleTilePrefab: {fileID: 1732889954606014346, guid: 28613cdd06be549459a9c1fcffdb351e, type: 3}
